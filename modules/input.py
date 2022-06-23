@@ -4,7 +4,7 @@ def user_option_selection():
 
 
 def user_description_input():
-    description = input("Enter task description to search for: ")
+    description = input("Enter task description: ")
     return description
 
 def user_time_input():
