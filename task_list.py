@@ -10,18 +10,20 @@ tasks = [
 
 ## Get a list of uncompleted tasks
 def get_uncompleted_tasks(list):
-    not_complete = []
-    for task in list:
-        if task["completed"] == False:
-            not_complete.append(task)
+    not_complete = get_tasks_by_status(list, False)
+    # for task in list:
+    #     if task["completed"] == False:
+    #         not_complete.append(task)
     return not_complete
+    
+
 
 ## Get a list of completed tasks
 def get_completed_tasks(list):
-    complete = []
-    for task in list:
-        if task["completed"] == True:
-            complete.append(task)
+    complete = get_tasks_by_status(list, True)
+    # for task in list:
+    #     if task["completed"] == True:
+    #         complete.append(task)
     return complete
 
 ## Get tasks where time_taken is at least a given time
