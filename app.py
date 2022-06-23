@@ -3,10 +3,11 @@
 # # from data.task_list import *
 # from modules.input import *
 from modules import *
-import_tasks = input("Would you like to import pre-populated tasks? y/n \n")
-tasks = []
-if import_tasks.lower() == "y":
-    from data.task_list import *
+from data import *
+# import_tasks = input("Would you like to import pre-populated tasks? y/n \n")
+# tasks = []
+# if import_tasks.lower() == "y":
+#     from data.task_list import *
 
 
 
